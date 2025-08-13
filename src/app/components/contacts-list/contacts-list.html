@@ -1,1 +1,7 @@
-<p>contacts-list works!</p>
+@for (contact of contacts(); track contact.id) {
+  <div>
+    <h3>{{ contact.name }}</h3>
+    <p>{{ contact.email }}</p>
+    <p>{{ contact.phone }}</p>
+  </div>
+}
